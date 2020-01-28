@@ -1,11 +1,11 @@
-import { productArray } from './product-data.js';
+import { products } from './product-data.js';
+import { getRandomProduct } from './utils.js';
+
+const newProductArray = products.slice();
+
+
 let clickCounter;
-let userProductChoice;
+let userProductChoice = [];
 
-newProductArray = productArray.slice();
 
-function getRandomproduct() {
-    const randomProductIndex = Math.floor(Math.random() * newProductArray.length);
 
-    return newProductArray[randomProductIndex];
-}

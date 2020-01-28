@@ -1,4 +1,4 @@
-export const productArray = [
+export const products = [
     {
         id: 1,
         image: '../assets/bag.jpg',
