@@ -44,3 +44,7 @@ body {
     background-color: springgreen;
     border: solid 3px peachpuff;
 }
+footer {
+    text-align: center;
+    font-size: 12px;
+}
