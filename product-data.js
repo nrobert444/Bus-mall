@@ -1,101 +1,101 @@
 export const products = [
     {
-        id: 1,
+        id: 'R2D2bag',
         image: '../assets/bag.jpg',
         name: 'r2d2bag'
     },
     {
-        id: 2,
+        id: 'Banana Slicer',
         image: '../assets/banana.jpg',
         name: 'banana-slicer'       
     },
     {
-        id: 3,
+        id: 'Toilet Ipad',
         image: '../assets/bathroom.jpg',
         name: 'toilet-ipad'
     },
     {
-        id: 4,
+        id: 'Rain boots',
         image: '../assets/boots.jpg',
         name: 'rain-boots'
     },
     {
-        id: 5,
-        image: '../assets/breakfast',
+        id: 'Coffee maker',
+        image: '../assets/breakfast.jpg',
         name: 'coffee-maker'
     },
     {
-        id: 6,
+        id: 'Meatball gum',
         image: '../assets/bubblegum.jpg',
         name: 'meatball-gum'
     },
     {
-        id: 7,
+        id: 'Ugly chair',
         image: '../assets/chair.jpg',
         name: 'ugly-chair'
     },
     {
-        id: 8,
+        id: 'Cthulhu',
         image: '../assets/cthulhu.jpg',
         name: 'cthulhu'
     },
     {
-        id: 9,
+        id: 'Dog beak',
         image: '../assets/dog-duck.jpg',
         name: 'dog-beak'
     },
     {
-        id: 10,
+        id: 'Dragon meat',
         image: '../assets/dragon.jpg',
         name: 'dragon-meat'
     },
     {
-        id: 11,
+        id: 'Pen Spoon',
         image: '../assets/pen.jpg',
         name: 'pen-spoon'
     },
     {
-        id: 12,
+        id: 'Pet broom',
         image: '../assets/pet-sweep.jpg',
-        name: 'per-broom'
+        name: 'pet-broom'
     },
     {
-        id: 13,
+        id: 'Pizzors',
         image: '../assets/scissors.jpg',
         name: 'pizzors'
     },
     {
-        id: 14,
+        id: 'Jaws sleeper',
         image: '../assets/shark.jpg',
         name: 'jaws-sleep'
     },
     {
-        id: 15,
-        image: '../assets/sweep.jpg',
+        id: 'Baby mop',
+        image: '../assets/sweep.png',
         name: 'baby-mop'
     },
     {
-        id: 16,
+        id: 'Baby Tauntaun',
         image: '../assets/tauntaun.jpg',
         name: 'baby-tauntuan'
     },
     {
-        id: 17,
+        id: 'Unicorn meat',
         image: '../assets/unicorn.jpg',
         name: 'unicorn-meat'
     },
     {
-        id: 18,
-        image: '../assets/usb.jpg',
+        id: 'Tentacle USB',
+        image: '../assets/usb.gif',
         name: 'tentacle-usb'
     },
     {
-        id: 19,
+        id: 'Water yourself',
         image: '../assets/water-can.jpg',
         name: 'water-yourself'
     },
     {
-        id: 20,
+        id: 'Weird wine glass',
         image: '../assets/wine-glass.jpg',
         name: 'weird-wine-glass'
     }

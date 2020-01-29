@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <canvas id="chart"></canvas>
+
     <header>
         <h1>BusMall Product Survey</h1>
         <img src="/assets/busmall-logo.jpeg" height='200px' width='300px'>
@@ -19,27 +21,26 @@
             <p>You've been chosen to participate in selecting items that will be offered in out BusMall monthly magazine. Please select an item below by clicking on the image for the item you would be most likely to buy. New image offerings will appear after each selection and the survey will end after 25 selections have been made. </p>
         </section>
         <section id="product-container">
-            <label id="label-one">
+        <form>
+            <label>
+                <span id="product-one-span"></span>
                 <img id="image-one" src="">
-                <input type="radio" name="product" id="radio-one" value="">
+                <input type="radio" name="product" id="radio-one" checked />
             </label>
-            <label id="label-two">
+            <label>
+                <span id="product-two-span"></span>
                 <img id="image-two" src="">
-                <input type="radio" name="product" id="radio-two" value="">
+                <input type="radio" name="product" id="radio-two" />
             </label>
-            <label id="label-three">
+            <label>
+                <span id="product-three-span"></span>
                 <img id="image-three" src="">
-                <input type="radio" name="product" id="radio-three" value="">
+                <input type="radio" name="product" id="radio-three" />
             </label>
-        </section>
-            <div id="display-results">
-            <!-- chart will display here -->
-            </div>
-        </section>
-
-        
+            <button>Vote</button>
+        </form>
     </main>
-
+    
     <script src="app.js" type="module"></script>
 </body>
 

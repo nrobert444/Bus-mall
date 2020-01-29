@@ -7,3 +7,7 @@ header {
     height: 20%;
     margin: 0px;
 }
+#product-container img {
+    height: 250px;
+    width: 250px;
+}
