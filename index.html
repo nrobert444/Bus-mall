@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bus Mall</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>BusMall Product Survey</h1>
+       <a href ="index.html"><img src="/assets/busmall-logo.jpeg" height='200px' width='300px'></a>
+    </header>
+    <main>
+        <section id="text-explain">
+            <p>You've been chosen to participate in selecting items that will be offered in out BusMall monthly magazine. Please select an item below by clicking on the image for the item you would be most likely to buy. New image offerings will appear after each selection and the survey will end after 25 selections have been made. You can view your results below in the chart that displays.</p>
+            <p>Click on the bus image at the top of the page to restart the survey!</p>
+        </section>
+        <section id="product-container">
+        <form>
+            <label>
+                <span id="product-one-span"></span>
+                <img id="image-one" src="">
+                <input type="radio" name="product" id="radio-one" checked />
+            </label>
+            <label>
+                <span id="product-two-span"></span>
+                <img id="image-two" src="">
+                <input type="radio" name="product" id="radio-two" />
+            </label>
+            <label>
+                <span id="product-three-span"></span>
+                <img id="image-three" src="">
+                <input type="radio" name="product" id="radio-three" />
+            </label>
+            <button>Vote</button>
+        </form>
+    </main>
+    <section id="results-chart-display">
+        <canvas id="results"></canvas>
+        <span id="results"></span>
+    </section>
+    <script src="app.js" type="module"></script>
+    <script type="module" src="results.js"></script>
+</body>
+<footer>
+    <h3>&copy Copyright 2020 Alchemy Code Labs Nicholas Roberto</h3>
+</footer>
+
+</html>
