@@ -45,6 +45,7 @@ form.addEventListener('submit', (e) => {
     const formData = new FormData(form);
  
     const selectedProductId = formData.get('product');
+    console.log(selectedProductId);
 
     totalVotes++;
     const productInVotesArray = findById(productVoteDetails, selectedProductId);

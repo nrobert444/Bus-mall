@@ -7,6 +7,7 @@ const labels = [];
 results.forEach(item => {
     votes.push(item.votes);
     labels.push(item.id);
+    console.log(item.id);
 });
 
 const ctx = document.getElementById('results').getContext('2d');
