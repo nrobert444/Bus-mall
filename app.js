@@ -13,8 +13,8 @@ initializeState();
 
 
 const newProductArray = checkRandom();
-console.log(checkRandom());
 
+const productBox = document.getElementById('product-container')
 const imageOne = document.getElementById('image-one');
 const imageTwo = document.getElementById('image-two');
 const imageThree = document.getElementById('image-three');
@@ -45,14 +45,11 @@ form.addEventListener('submit', (e) => {
     const formData = new FormData(form);
  
     const selectedProductId = formData.get('product');
-    console.log(selectedProductId);
-
     totalVotes++;
     const productInVotesArray = findById(productVoteDetails, selectedProductId);
 
     if(productInVotesArray){
         productInVotesArray.votes++;
-        console.log(productInVotesArray.votes)
     } else {
         productVoteDetails.push({
             id: selectedProductId,
@@ -63,9 +60,44 @@ form.addEventListener('submit', (e) => {
     localStorage.setItem('votes', JSON.stringify(productVoteDetails));
 
     if(totalVotes >= 25) {
+        productBox.style.display = 'none';
+        const results = JSON.parse(localStorage.getItem('votes'));
+
+
+        const votes = [];
+        const labels = [];
+
+        results.forEach(item => {
+            votes.push(item.votes);
+            labels.push(item.id);
+            console.log(item.id);
+        });
+
+        const ctx = document.getElementById('results').getContext('2d');
+
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: '# of Votes',
+                    data: votes,
+                    backgroundColor: ['lightblue', 'blue', 'yellow', 'green', 'purple', 'orange','lightblue', 'blue', 'yellow', 'green', 'purple', 'orange','lightblue', 'blue', 'yellow', 'green', 'purple', 'orange','lightblue', 'blue', 'yellow', 'green', 'purple', 'orange']
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
         reset();
-        window.location = 'results.html';        
-    }
+    };
 
     const anotherNewProductArray = checkRandom();
 
@@ -82,6 +114,6 @@ form.addEventListener('submit', (e) => {
     radioThreeSpan.textContent = anotherNewProductArray[2].name;
 });
 
-function reset() {
+export function reset() {
     initializeState();
 };
